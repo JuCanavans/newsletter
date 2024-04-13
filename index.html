@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./app/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="secao__banner" id="page_1">
+            <div class="secao__banner__infos">
+                <div class="infos__text">
+                    <h1>Stay updated!</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul class="lista__banner">
+                        <li>
+                            <img src="./style/img/icon-list.svg" alt="Check">
+                            <p>Product discovery and building what matters</p>
+                        </li>
+                        <li>
+                            <img src="./style/img/icon-list.svg" alt="Check">
+                            <p>Measuriong to ensure updates are a success</p>
+                        </li>
+                        <li>
+                            <img src="./style/img/icon-list.svg" alt="Check">
+                            <p>And much more!</p>
+                        </li>
+                    </ul>
+                    <div class="secao__infos__buttons" id="email">
+                        <label>
+                            <div class="descricao__email__alert">
+                                <span>Email address</span>
+                                <span id="alert">Invalid email</span>
+                            </div>
+                            <input type="email" id="emailInput" placeholder="email@company.com">
+                        </label>
+                        <a href="#" id="submitBtn">
+                            Subscribe to monthly
+                        </a>
+                    </div>
+                </div>            
+            </div>
+            <picture></picture>
+        </section>
+
+        <section class="secao__inscrito" id="page_2">
+            <div class="secao__banner__dimiss">
+                <div class="secao__thanks">
+                    <img src="./style/img/icon-success.svg" alt="Check">
+                    <h1>Thanks for subscribing!</h1>
+                    <p>A confimation email has been sent to <strong id="mensagemThanks"></strong>. Please open it and click the button inside to confirm your subscription.</p>
+                </div>
+                    <a href="#" id="dismissMenssage">
+                    Dismiss message
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

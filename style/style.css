@@ -1,0 +1,255 @@
+@import url("./_root.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --ft-primary: "Roboto", sans-serif;
+    --bg-color: #36384d;
+    --bg-color-main: #ffffff;
+    --cl-text: #242541;
+}
+
+body{
+    font-family: var(--ft-primary);
+    font-size: 16px;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    background: var(--bg-color-main);
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.secao__banner{
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+.secao__banner__infos{
+    padding: 1.5em 0em 1.5em 1.5em;
+}
+
+.infos__text{
+    width: 90%;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.infos__text h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--cl-text);
+}
+
+.infos__text p{
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--cl-text);
+    line-height: 31px;
+}
+
+.lista__banner{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.lista__banner li{
+    display: inline-flex;
+    column-gap: 1.2em;
+    align-items: center;
+}
+
+.lista__banner li img{
+    width: 25px;
+}
+
+.secao__infos__buttons{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .9em;
+}
+
+.secao__infos__buttons label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .6em;
+}
+
+.descricao__email__alert{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.secao__banner__infos label span{
+    color: var(--cl-text);
+    font-weight: 700;
+}
+
+/*Alert de email invalido*/
+.secao__banner__infos label span:nth-child(2){
+    color: red;
+    display: none;
+}
+
+#emailInput{
+    border: 2px solid #cecece;
+    border-radius: 6px;
+    padding: 17px;
+    color: #41424d;
+}
+
+#emailInput:hover{
+    cursor: pointer;
+    border: 2px solid #232742;
+}
+
+#emailInput::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    color: #cecece;
+}
+
+#nome::-webkit-input-placeholder{
+    color:#1C1C1C;
+    background-color: #4682B4;
+    text-transform: uppercase;
+    font-style: bold;
+    font-size:15px;
+}
+
+.secao__banner__dimiss a,
+.secao__infos__buttons a{
+    background: #232742;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 0;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--bg-color-main);
+}
+
+.secao__banner__dimiss a:hover,
+.secao__infos__buttons a:hover{
+    background-image: linear-gradient(to right, #ff5377, #ff693e);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+picture{
+    width: 400px;
+    height: auto;
+    background-image: url("./img/illustration-sign-up-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 17px;
+}
+
+/*page_02*/
+
+.secao__inscrito{
+    display: none;
+}
+
+.secao__banner__dimiss{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.8em;
+    padding: 4em;
+}
+
+.secao__banner__dimiss h1{
+    font-size: 70px;
+    color: var(--cl-text);
+    font-weight: 700;
+}
+.secao__banner__dimiss p{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--cl-text);
+    line-height: 34px;
+}
+
+.secao__thanks{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.secao__thanks img{
+    width: 64px;
+}
+
+@media screen and (max-width: 955px){
+    .secao__banner{
+        display: none;/*Depois mudar*/
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 0;
+    }
+    .secao__banner__infos{
+        padding: 0em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .infos__text{
+        width: 90%;
+    }
+    picture{
+        width: 100%;
+        height: 350px;
+        background-image: url("./img/illustration-sign-up-mobile.svg");
+        border-radius: 22px;
+    }
+    /*Texto*/
+    .infos__text h1{
+        font-size: 35px;
+    }
+    .infos__text p{
+        font-size: 15px;
+    }
+    .lista__banner li img{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .secao__banner__dimiss{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 2em;
+        height: 100vh;
+    }
+    .secao__banner__dimiss h1{
+        font-size: 40px;
+    }
+    .secao__banner__dimiss p{
+        font-size: 22px;
+    }
+}
