@@ -13,7 +13,7 @@
 </div>
 
 ## 🌐 Website
-Visit the [Newsletter](https://nike-jordan-rho.vercel.app/) to explore the live site.
+Visit the [Newsletter](https://newsletter-blush-one.vercel.app/) to explore the live site.
 
 Visit the [Front-end Mentor](https://www.frontendmentor.io/) to explore the live site.
 
